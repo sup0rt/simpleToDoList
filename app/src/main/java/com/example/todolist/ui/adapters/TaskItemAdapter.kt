@@ -1,12 +1,12 @@
-package com.example.todolist.adapters
+package com.example.todolist.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.todolist.model.TaskItem
-import com.example.todolist.TaskItemListener
+import com.example.todolist.data.TaskItem
+import com.example.todolist.interfaces.TaskItemListener
 import com.example.todolist.databinding.TaskItemCellBinding
-import com.example.todolist.views.TaskItemViewHolder
+import com.example.todolist.ui.holders.TaskItemViewHolder
 
 class TaskItemAdapter(
     private val taskItems: List<TaskItem>,

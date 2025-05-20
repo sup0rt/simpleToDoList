@@ -1,4 +1,4 @@
-package com.example.todolist.model
+package com.example.todolist.data
 
 import android.content.Context
 import androidx.core.content.ContextCompat
@@ -9,7 +9,6 @@ import com.example.todolist.R
 import java.time.LocalDate
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
-import java.util.UUID
 
 @Entity(tableName = "task_item_table")
 class TaskItem

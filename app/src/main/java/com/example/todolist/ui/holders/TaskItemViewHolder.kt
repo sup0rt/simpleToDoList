@@ -1,13 +1,12 @@
-package com.example.todolist.views
+package com.example.todolist.ui.holders
 
 import android.content.Context
 import android.graphics.Paint
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
-import com.example.todolist.model.TaskItem
-import com.example.todolist.TaskItemListener
-import com.example.todolist.databinding.FragmentNewTaskSheetBinding
+import com.example.todolist.interfaces.TaskItemListener
+import com.example.todolist.data.TaskItem
 import com.example.todolist.databinding.TaskItemCellBinding
 import java.time.format.DateTimeFormatter
 

@@ -1,4 +1,4 @@
-package com.example.todolist.model
+package com.example.todolist.ui.components
 
 import android.app.TimePickerDialog
 import android.os.Bundle
@@ -7,8 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import com.example.todolist.data.TaskItem
 import com.example.todolist.databinding.FragmentNewTaskSheetBinding
-import com.example.todolist.views.TaskViewModel
+import com.example.todolist.viewmodel.TaskViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import java.time.LocalTime
 
@@ -84,7 +85,7 @@ class NewTaskSheet(var taskItem: TaskItem?) : BottomSheetDialogFragment()
     private fun NewTaskSheet.saveAction() {
         val name = binding.name.text.toString()
         val desc = binding.description.text.toString()
-        val dueTimeString = if(dueTime == null) null else TaskItem.timeFormatter.format(dueTime)
+        val dueTimeString = if(dueTime == null) null else TaskItem.Companion.timeFormatter.format(dueTime)
 
         if(taskItem == null){
             val newTask = TaskItem(name, desc, dueTimeString, null)

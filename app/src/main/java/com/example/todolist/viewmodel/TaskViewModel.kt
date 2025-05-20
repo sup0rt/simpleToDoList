@@ -1,11 +1,11 @@
-package com.example.todolist.views
+package com.example.todolist.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.todolist.TaskItemRepository
-import com.example.todolist.model.TaskItem
+import com.example.todolist.data.repository.TaskItemRepository
+import com.example.todolist.data.TaskItem
 import kotlinx.coroutines.launch
 import java.time.LocalDate
 

@@ -1,6 +1,6 @@
-package com.example.todolist
+package com.example.todolist.interfaces
 
-import com.example.todolist.model.TaskItem
+import com.example.todolist.data.TaskItem
 
 interface TaskItemListener
 {

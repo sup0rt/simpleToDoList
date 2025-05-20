@@ -2,19 +2,17 @@ package com.example.todolist
 
 import android.os.Build
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.todolist.adapters.TaskItemAdapter
+import com.example.todolist.ui.adapters.TaskItemAdapter
 import com.example.todolist.databinding.ActivityMainBinding
-import com.example.todolist.model.NewTaskSheet
-import com.example.todolist.model.TaskItem
-import com.example.todolist.views.TaskViewModel
+import com.example.todolist.ui.components.NewTaskSheet
+import com.example.todolist.data.TaskItem
+import com.example.todolist.interfaces.TaskItemListener
+import com.example.todolist.viewmodel.TaskItemModelFactory
+import com.example.todolist.viewmodel.TaskViewModel
 
 class MainActivity : AppCompatActivity(), TaskItemListener
 {
