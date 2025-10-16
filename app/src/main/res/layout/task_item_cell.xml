@@ -1,51 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/taskCellContainer"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="90dp"
-    app:cardCornerRadius="5dp"
     android:layout_margin="5dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        >
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/completeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:scaleY="1.5"
-            android:scaleX="1.5"
-            android:contentDescription="@string/checkbox"
-            android:layout_marginHorizontal="5dp"
-            android:src="@drawable/ic_not_checked"
+            android:layout_margin="5dp"
             android:backgroundTint="@android:color/transparent"
-            />
+            android:contentDescription="@string/checkbox"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:src="@drawable/ic_not_checked" />
 
         <TextView
             android:id="@+id/name"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/place_holder"
             style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_margin="5dp"
             android:layout_weight="1"
-            />
+            android:text="@string/place_holder"
+            android:textAlignment="center"
+            android:textColor="#165B0F"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
 
         <TextView
             android:id="@+id/dueTime"
+            style="@style/TextAppearance.AppCompat.Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/place_holder"
-            style="@style/TextAppearance.AppCompat.Title"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="5dp"
-            />
+            android:layout_margin="10dp"
+            android:text="@string/place_holder"
+            android:textAlignment="center"
+            android:textColor="#165B0F" />
 
     </LinearLayout>
 

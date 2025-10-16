@@ -14,21 +14,23 @@
 
         <TextView
             android:id="@+id/taskTitle"
+            style="@style/TextAppearance.AppCompat.Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Новая задача"
-            android:textSize="30sp"
-            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_centerVertical="true"
             android:layout_marginStart="20dp"
-            android:layout_centerVertical="true"/>
+            android:text="Новая задача"
+            android:textColorLink="#165B0F"
+            android:textSize="30sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/deleteTaskButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="16dp"
             android:layout_margin="5dp"
+            android:layout_marginEnd="16dp"
+            app:backgroundTint="#93CA93"
             app:srcCompat="@drawable/ic_delete"
             app:tint="@android:color/white"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -46,8 +48,11 @@
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:drawableTint="@color/white"
             android:hint="название задачи"
-            />
+            android:textColor="@color/white"
+            android:textColorLink="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,8 +68,11 @@
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:drawableTint="@color/white"
             android:hint="описание задачи"
-            />
+            android:textColor="@color/white"
+            android:textColorLink="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -74,8 +82,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="5dp"
         android:text="Время"
-        />
+        android:textColor="#165B0F"
+        android:textColorLink="#165B0F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#93CA93" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/saveButton"
@@ -83,8 +96,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
         android:text="Сохранить"
-        />
+        android:textColor="#165B0F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#93CA93" />
 
 
 
